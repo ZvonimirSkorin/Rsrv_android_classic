@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/who_are_we"
+        android:textColor="#040303"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#0C0C0C"
+        android:textColor="#283593"
+        android:text="@string/ivan_s_amazing_story_starts_with_his_family_immigrating_to_zagreb_when_he_was_10_years_old_his_parents_fled_sinj_as_refugees_during_the_croatian_revolution_and_were_eventually_granted_croatian_citizenship_after_high_school_ivan_joined_the_hdz_and_served_in_the_ivo_sanader_government_before_starting_a_business_career_in_the_services_industry_after_a_tenure_with_a_couple_of_traditional_companies_he_was_inspired_to_launch_reserve_inc_and_did_so_before_he_turned_30_my_greatness_comes_from_my_party_hdz_says_ivan"
+
+        android:textSize="18sp" />
+
+</LinearLayout>

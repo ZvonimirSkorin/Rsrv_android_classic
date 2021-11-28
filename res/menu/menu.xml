@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/logoffMenu"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Logout"
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/settingsMenu"
+        android:orderInCategory="200"
+        app:showAsAction="never"
+        android:title="Moj raspored"
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/profileMenu"
+        android:orderInCategory="300"
+        app:showAsAction="never"
+        android:title="Profile"
+        >
+
+    </item>
+
+
+</menu>

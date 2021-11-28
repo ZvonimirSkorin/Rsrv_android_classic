@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">ReserVe</string>
+
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="reserved">ReserVed</string>
+
+
+    <string name="new_user_sign_up">New user? Sign up!</string>
+    <string name="reserve">ReserVe</string>
+    <string name="who_are_we">Who are we?</string>
+    <string name="ivan_s_amazing_story_starts_with_his_family_immigrating_to_zagreb_when_he_was_10_years_old_his_parents_fled_sinj_as_refugees_during_the_croatian_revolution_and_were_eventually_granted_croatian_citizenship_after_high_school_ivan_joined_the_hdz_and_served_in_the_ivo_sanader_government_before_starting_a_business_career_in_the_services_industry_after_a_tenure_with_a_couple_of_traditional_companies_he_was_inspired_to_launch_reserve_inc_and_did_so_before_he_turned_30_my_greatness_comes_from_my_party_hdz_says_ivan">Ivan’s amazing story starts with his family immigrating to Zagreb when he was 10-years old. His parents fled Sinj as refugees during the Croatian revolution and were eventually granted Croatian citizenship. After high school Ivan joined the HDZ and served in the Ivo Sanader government before starting a business career in the services industry. After a tenure with a couple of traditional companies, he was inspired to launch Reserve Inc.,– and did so before he turned 30. „My greatness comes from my party- HDZ“ says Ivan.</string>
+    <string name="enter_your_number">Enter your number</string>
+
+    <string name="already_signed_in_login">Already Signed in? Login</string>
+    <string name="register">REGISTER</string>
+    <string name="enter_e_mail">Enter e-mail</string>
+    <string name="lastname">Lastname</string>
+    <string name="name">Name</string>
+
+    <string name="textview">TextView</string>
+
+    <string name="sign_out">Sign out</string>
+    <string name="nadamo_se_skora_njem_povratku">Nadamo se skorašnjem povratku!</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="restorani">Restorani</string>
+    <string name="rekreacija">Rekreacija</string>
+    <string name="ordinacije">Ordinacije</string>
+    <string name="opu_tanje">Opuštanje</string>
+    <string name="ljepota">Ljepota</string>
+    <string name="ostalo">Ostalo</string>
+    <string name="todo">TODO</string>
+    <string name="moje_rezervacije">Moje rezervacije</string>
+    <string name="tra_ilica">Tražilica</string>
+    <string name="poruke">Poruke</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="promjeni">Promjeni</string>
+    <string name="problemi_kontaktiraj_na_tim">Problemi? Kontaktiraj naš tim.</string>
+
+
+</resources>

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorica"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/akcionatrakaProfilKorisnika"
+        android:background="@drawable/colorica"
+        android:layout_height="47dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/rasporedNazadKorisnika"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:numStars="1"
+          android:rating="5"
+            android:maxHeight="0.8dp"
+            android:progressTint="@color/yellow"
+            android:maxWidth="0.8dp"
+            android:layout_toRightOf="@id/rasporedNazadKorisnika"/>
+
+<ImageView
+    android:layout_width="47dp"
+    android:layout_height="match_parent"
+    android:id="@+id/starprofilna"
+    android:layout_toRightOf="@id/rasporedNazadKorisnika"
+    android:src="@drawable/ic_baseline_star_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/starprofilna"
+            android:text="9.4"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:id="@+id/ocjenaKorisnika"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ocjenaKorisnika"
+            android:text="(100)"
+            android:id="@+id/brojOcjenjivaca"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"
+           />
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivKorisnikovaSlika"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-30dp"
+        android:scaleType="centerCrop"
+        android:layout_width="171dp"
+        android:layout_below="@id/akcionatrakaProfilKorisnika"
+        android:layout_height="141dp"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="67dp"
+        android:layout_height="wrap_content"
+
+        android:layout_toLeftOf="@id/ivKorisnikovaSlika"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvImeKorisnika"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ivKorisnikovaSlika"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+       android:text="Zvone" />
+
+
+
+    <TextView
+        android:id="@+id/tvKorisnikovBroj"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvImeKorisnika"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="094234242"
+         />
+
+    <TextView
+        android:id="@+id/tvKorisnikovEmail"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvKorisnikovBroj"
+        android:layout_centerHorizontal="true"
+        android:text="iksfd@gmail.com"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+         />
+
+        <Button
+            android:id="@+id/btnPromjeni"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/promjeni"
+            android:layout_below="@id/ivKorisnikovaSlika" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:text="@string/problemi_kontaktiraj_na_tim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_below="@id/ivKorisnikovaSlika"
+        android:layout_marginTop="60dp"
+        android:alignmentMode="alignMargins"
+        android:autofillHints="Trazis firmu?"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="3">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="12dp"
+        android:elevation="6dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:id="@+id/LLrekreacija"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+               android:text="7"
+                android:layout_marginTop="-10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="70sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ukupno"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="12dp"
+        android:elevation="6dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:id="@+id/LLRestorani"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="70dp"
+                android:layout_marginTop="-10dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aktivnih"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+
+        android:layout_columnWeight="1"
+        android:layout_margin="12dp"
+        android:elevation="6dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:id="@+id/ordinacije"
+            android:background="@color/white"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="70dp"
+                android:layout_marginTop="-10dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Strike"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:background="#b0bec5"
+        android:layout_columnWeight="1"
+        android:layout_margin="12dp"
+        android:elevation="6dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/njega" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Najčešća"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    </GridLayout>
+    <ImageView
+        android:id="@+id/ivPoziv"
+        android:layout_width="149dp"
+        android:layout_height="88dp"
+        android:clickable="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941"
+        app:srcCompat="@drawable/zovigazdu"
+        android:contentDescription="@string/todo"
+        android:focusable="true" />
+</RelativeLayout>

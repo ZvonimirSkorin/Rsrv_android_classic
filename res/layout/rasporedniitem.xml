@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/cijelirelaitiv"
+
+    android:layout_margin="7dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/customborderzaraspored"
+        android:padding="10dp"
+     android:paddingBottom="20dp"
+        android:id="@+id/relativica"
+        android:layout_margin="7dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:id="@+id/bezvezninaslov"
+    android:layout_centerHorizontal="true"
+    android:textSize="24sp"
+    android:text="Frizeski studio Glorija"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ustaskipodatci"
+        android:layout_below="@id/bezvezninaslov"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10.04.1941."
+        android:id="@+id/ustaskiDatum"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/crticarasproedna"
+
+        android:layout_toRightOf="@id/ustaskiDatum"
+        android:text="07:00-09:00"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textAlignment="gravity"
+     />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ustaskipodatci"
+        android:text="Ulica Ivane Brlić Mažuranić 20"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:id="@+id/bezveznaadresa"
+       android:layout_centerHorizontal="true"
+        />
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+android:background="@drawable/circle"
+        android:id="@+id/pickasamiotkazatcu"
+        android:layout_below="@+id/relativica"
+        android:layout_marginTop="-30dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

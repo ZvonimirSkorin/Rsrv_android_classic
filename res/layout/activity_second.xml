@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Widget.DeviceDefault.ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+android:id="@+id/punoikona"
+    android:scrollbarStyle="insideOverlay"
+    android:visibility="visible"
+    tools:context=".SecondActivity"
+    tools:visibility="visible">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"
+        android:visibility="gone"
+        app:lottie_colorFilter="#0d47a1"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/pahuljice"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/akcionatraka"
+        android:background="@drawable/colorica"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/sortiranjeNaprvojstranici"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_table_rows_24"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:visibility="invisible"
+          android:layout_height="wrap_content"
+          android:text="Bok, Zvonimir"
+          android:id="@+id/personaliziranaPrvaStranica"
+          android:textColor="@color/black"
+          android:textSize="25sp"
+          android:layout_centerVertical="true"
+          android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <fragment
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment"
+        android:layout_weight="1"
+android:layout_below="@id/akcionatraka"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:name="com.example.reserve.BlankFragment">
+
+
+    </fragment>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_below="@id/akcionatraka"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/chatich"
+            android:background="#1e88e5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+android:visibility="gone"
+
+            app:tabTextColor="@color/black">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/gobo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Moje rezervacije" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trazilica" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poruke" />
+        </com.google.android.material.tabs.TabLayout>
+
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30dp"
+            android:alignmentMode="alignMargins"
+            android:autofillHints="Trazis firmu?"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:id="@+id/LLrekreacija"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+android:background="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/lopta" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/rekreacija"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:id="@+id/LLRestorani"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/restorani" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:text="@string/restorani"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:id="@+id/ordinacije"
+                    android:background="@color/white"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/doktori" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/ordinacije"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="#b0bec5"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/njega" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/opu_tanje"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/frizeri" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/ljepota"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:background="@color/white"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/common_google_signin_btn_text_dark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/ostalo"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
